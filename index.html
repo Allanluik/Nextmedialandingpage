@@ -308,7 +308,7 @@
     </div>
     <div class="nav-links">
       <a href="#servicos">Serviços</a>
-      <a href="#cases">Resultados</a>
+      <a href="#cases-social">Resultados</a>
       <a href="#contato">Contato</a>
     </div>
     <a href="https://wa.me/5511926808511" target="_blank" class="nav-cta">
@@ -856,7 +856,7 @@
   });
 
   const navLinks = document.querySelectorAll('.nav-links a');
-  const navTargets = ['servicos','cases','contato'].map(id=>document.getElementById(id)).filter(Boolean);
+  const navTargets = ['servicos','cases-social','contato'].map(id=>document.getElementById(id)).filter(Boolean);
   const navIO = new IntersectionObserver((entries)=>{
     entries.forEach(entry=>{
       if(entry.isIntersecting){
